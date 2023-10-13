@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * print_number - print the no since o up to 9
  * Return: the no since 0 - 9
