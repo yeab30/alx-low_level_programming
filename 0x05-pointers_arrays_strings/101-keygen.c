@@ -37,12 +37,12 @@ if (sum != 2772)
 				                 if (password[index] >= (33 + diff_half2))
 			{
 										                         password[index] -= diff_half2;
-													                         break;
-																      
+													 													                         break;
+			}						 
 							   		 }
 						         }
 	 printf("%s" , password);
-	 return (
+	 return (0);
 
 }
-}
+
