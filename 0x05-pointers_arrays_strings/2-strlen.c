@@ -1,4 +1,5 @@
 #include <stdio.h>
+/*hh*/
 int _strlen(char *s)
 /*ad*/
 {
