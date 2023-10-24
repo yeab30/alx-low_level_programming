@@ -1,29 +1,22 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * *_strpbrk - searches a string for any of a set of bytes
- * @s: string to search
- * @accept: stringcontaining the bytes to look for
- *
- * Return: pointer to the byte in s that matches one of the bytes in accept
- * or NULL if no such byte is found
+ * main - prints the alphabet in lowercase,
+ * followed by a new line, except q and e
+ * Return: Aways 0 (Sucess)
  */
-char *_strpbrk(char *s, char *accept)
+int main(void)
 {
-	int i, j;
+	char ch = 'a';
 
-	for (i = 0; *s != '\0'; i++)
+	while (ch <= 'z')
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		if (ch != 'e' && ch != 'q')
 		{
-			if (*s == accept[j])
-			{
-				return (s);
-			}
+			putchar(ch);
 		}
-		s++;
+		ch++;
 	}
-
-	return (NULL);
+	putchar('\n');
+	return (0);
 }

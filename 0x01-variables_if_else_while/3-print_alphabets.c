@@ -1,35 +1,18 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * *_strspn - gets the length of a prefix substring
- * @s: string to evaluate
- * @accept: string containing the list of characters to match in s
- *
- * Return: the number of bytes in the initial segment
- * of s which consist only of bytes from accept
+ * main - prints the alphabet in lowercase, and then in uppercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
-unsigned int _strspn(char *s, char *accept)
+int main(void)
 {
-	int i, j, f, flag;
+	int ch;
 
-	f = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		flag = 0;
-		for (j = 0; accept[j] != '\0'; j++)
-		{
-			if (s[i] == accept[j])
-			{
-				f++;
-				flag = 1;
-			}
-		}
-		if (flag == 0)
-		{
-			return (f);
-		}
-	}
-
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
+	putchar('\n');
 	return (0);
 }
